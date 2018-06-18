@@ -1,0 +1,46 @@
+uuid: e001b7a9-9ea8-4b6e-a956-be120209bcdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.learning_activity_post.body
+    - field.field.node.learning_activity_post.field_category
+    - node.type.learning_activity_post
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.learning_activity_post.teaser
+targetEntityType: node
+bundle: learning_activity_post
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 0
+    settings:
+      trim_length: 400
+    third_party_settings: {  }
+    region: content
+  field_category:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

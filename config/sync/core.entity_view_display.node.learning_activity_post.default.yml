@@ -1,0 +1,44 @@
+uuid: db0911fe-0f34-4d4f-94dd-f471df867f38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.learning_activity_post.body
+    - field.field.node.learning_activity_post.field_category
+    - node.type.learning_activity_post
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.learning_activity_post.default
+targetEntityType: node
+bundle: learning_activity_post
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_category:
+    weight: 102
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

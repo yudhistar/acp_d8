@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements template_preprocess_page().
+ */
+function acp_custom_preprocess_page(&$variables) {
+  global $base_root;
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  $variables['theme_path'] = drupal_get_path('theme', $theme);
+  $variables['base_path'] = base_path();
+
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+}

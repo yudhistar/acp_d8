@@ -1,0 +1,75 @@
+/**
+ * Place your custom styles here.
+ */
+
+/* Header */
+.navbar-header{
+  float: none;
+}
+
+.navbar-default{
+  background-color: #ffffff;
+}
+
+.header-menu{
+  background-color: #575a5d;
+}
+
+ul.menu.menu--main.nav.navbar-nav li a {
+  color: #ededed;
+}
+/* END Header */
+
+/* Footer */
+footer.footer.container-fluid {
+  background: #575a5d;
+}
+/* Footer End */
+
+/* Online learning activities category-listing */
+.learning-category .views-row:first-child .category-wrapper-grid .category-thumbnail-grid {
+    background: #00a0df;
+}
+
+.learning-category .views-row:nth-child(2) .category-wrapper-grid .category-thumbnail-grid {
+    background: #8fd400
+}
+
+.learning-category .views-row:nth-child(3) .category-wrapper-grid .category-thumbnail-grid {
+    background: #46cbff;
+}
+
+.category-thumbnail-grid img {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.category-wrapper-grid {
+  border: 1px solid #eee;
+}
+
+.category-title-grid {
+  text-align: center;
+  min-height: 100px;
+  display: table;
+  width: 100%;
+}
+
+.category-title-grid h5 {
+  color: #00a0df;
+  display:  table-cell;
+  vertical-align:  middle;
+  justify-content:  center;
+}
+
+/* End - Online learning activities category-listing */
+
+/* ========== Media Queries ========== */
+@media screen and (min-width: 768px){
+  body {
+    margin-top: 0px;
+  }
+}
+
+
+/* End - Media Queries*/
